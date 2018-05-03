@@ -1,8 +1,9 @@
-var playlist={artistName:"My Bloody Valentine",songTitle:"Sometimes"};
-function updatePlaylist(playlist){
-  Object.assign({"Slowdive":"Allison"},{"Phil Ochs":"Here's to the State of Mississippi"})
-  return playlist;
+var playlist={artistname:"song"};
+function updatePlaylist(playlist,artistname,songTitle){
+  playlist[artistname]=songTitle
 }
+function removeFromPlaylist(playlist, artistName){
+  delete playlist[artistName];
 
 
 
